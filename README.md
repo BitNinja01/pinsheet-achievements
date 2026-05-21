@@ -29,9 +29,36 @@ Requires PinSheet v2.1.0+.
 
 ## Installation
 
-Clone into `plugins/achievments/` relative to your PinSheet installation. PinSheet auto-discovers plugins at startup.
+### Prerequisites
+
+- **Python 3.11+**
+- **PinSheet v2.1.0+** — the parent app must be installed and its plugin system available
+
+**PinSheet's launcher (`launch.sh`/`launch.bat`) auto-installs plugin dependencies at startup** — no manual `pip install` needed when running inside PinSheet. The steps below just place the files in the right directory.
+
+### Option 1: Release zip (recommended)
+
+Download the latest release from the [releases page](https://github.com/BitNinja01/pinsheet-achievments/releases) and extract it into PinSheet's `plugins/` directory:
 
 ```bash
-cd /path/to/pinsheet/plugins
-git clone git@github.com:BitNinja01/pinsheet-achievements.git achievments
+# From your PinSheet install directory
+mkdir -p plugins
+cd plugins
+wget https://github.com/BitNinja01/pinsheet-achievments/releases/latest/download/achievments_X.Y.Z.zip
+unzip achievments_X.Y.Z.zip -d achievments
 ```
+
+### Option 2: Git clone
+
+```bash
+# From your PinSheet install directory
+mkdir -p plugins
+cd plugins
+git clone https://github.com/BitNinja01/pinsheet-achievments.git achievments
+```
+
+For standalone use outside PinSheet, run `pip install -r requirements.txt` from the achievments directory.
+
+### Verify installation
+
+Launch PinSheet — if installed correctly, you'll see Achievments listed under plugin bindings. Press `b` on the dashboard to open the achievement gallery.
