@@ -11,7 +11,7 @@
 
 ---
 
-> Track what matters. Compute what's honest. Surface what helps. Own your data.
+> Stats are serious. That doesn't mean they can't be fun.
 
 ---
 
