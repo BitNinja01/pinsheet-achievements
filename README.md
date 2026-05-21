@@ -1,7 +1,3 @@
-# Achievments
-
-> Track what matters. Compute what's honest. Surface what helps. Own your own data.
-
 [![Release](https://img.shields.io/github/v/release/BitNinja01/pinsheet-achievments.svg?style=for-the-badge&color=green)](https://github.com/BitNinja01/pinsheet-achievments/releases)
 [![Downloads](https://img.shields.io/github/downloads/BitNinja01/pinsheet-achievments/total.svg?style=for-the-badge&color=green)](https://github.com/BitNinja01/pinsheet-achievments/releases)
 [![CI](https://img.shields.io/github/actions/workflow/status/BitNinja01/pinsheet-achievments/ci.yml?branch=dev&style=for-the-badge&label=CI)](https://github.com/BitNinja01/pinsheet-achievments/actions)
@@ -12,6 +8,12 @@
   <img src="docs/img/logo_light.svg#gh-light-mode-only" alt="Achievments Logo" width="500">
   <img src="docs/img/logo_dark.svg#gh-dark-mode-only" alt="Achievments Logo" width="500">
 </p>
+
+---
+
+> Track what matters. Compute what's honest. Surface what helps. Own your own data.
+
+---
 
 A plugin for [PinSheet](https://github.com/BitNinja01/pinsheet), the golf stats and round tracking app. Tracks achievements, badges, and personal milestones from your golf rounds.
 
