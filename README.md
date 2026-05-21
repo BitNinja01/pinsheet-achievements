@@ -1,5 +1,7 @@
 # Achievments
 
+> Track what matters. Compute what's honest. Surface what helps. Own your own data.
+
 [![Release](https://img.shields.io/github/v/release/BitNinja01/pinsheet-achievments.svg?style=for-the-badge&color=green)](https://github.com/BitNinja01/pinsheet-achievments/releases)
 [![Downloads](https://img.shields.io/github/downloads/BitNinja01/pinsheet-achievments/total.svg?style=for-the-badge&color=green)](https://github.com/BitNinja01/pinsheet-achievments/releases)
 [![CI](https://img.shields.io/github/actions/workflow/status/BitNinja01/pinsheet-achievments/ci.yml?branch=dev&style=for-the-badge&label=CI)](https://github.com/BitNinja01/pinsheet-achievments/actions)
@@ -18,8 +20,6 @@ A plugin for [PinSheet](https://github.com/BitNinja01/pinsheet), the golf stats 
 - **Streak tracking** — consecutive rounds with FIR, GIR, par-or-better, or anything else worth keeping alive
 - **Achievement gallery** — browse earned and locked badges in-app, with context for what it takes to unlock each one
 - **All local, all personal** — your achievements stay on your machine, no accounts, no leaderboards, no network
-
-Stats are serious. That doesn't mean they can't be fun.
 
 ### Setup
 
