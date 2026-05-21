@@ -11,7 +11,7 @@
 
 ---
 
-> Stats are serious. That doesn't mean they can't be fun.
+> Numbers matter. Celebrating them matters more.
 
 ---
 
