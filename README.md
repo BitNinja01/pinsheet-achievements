@@ -13,10 +13,13 @@
 
 A plugin for [PinSheet](https://github.com/BitNinja01/pinsheet), the golf stats and round tracking app. Tracks achievements, badges, and personal milestones from your golf rounds.
 
-- **Personal best detection** — best gross, best differential, most GIR, fewest putts
-- **Milestone badges** — first round, 10th/50th/100th round, century of birdies
-- **Streak tracking** — consecutive rounds with FIR, GIR, par-or-better
-- **Achievement gallery** — browse earned and locked badges in-app
+- **Replaces the built-in bests section** — richer personal best detection that surfaces what matters: best round, best differential, most GIR, fewest putts, and more
+- **Milestone badges** — first round, 10th/50th/100th round, century of birdies, and other milestones worth celebrating
+- **Streak tracking** — consecutive rounds with FIR, GIR, par-or-better, or anything else worth keeping alive
+- **Achievement gallery** — browse earned and locked badges in-app, with context for what it takes to unlock each one
+- **All local, all personal** — your achievements stay on your machine, no accounts, no leaderboards, no network
+
+Stats are serious. That doesn't mean they can't be fun.
 
 ### Setup
 
@@ -26,14 +29,9 @@ Requires PinSheet v2.1.0+.
 
 ## Installation
 
-Place `pinsheet-achievments` in `plugins/achievments/` relative to your PinSheet installation. PinSheet auto-discovers plugins at startup.
+Clone into `plugins/achievments/` relative to your PinSheet installation. PinSheet auto-discovers plugins at startup.
 
----
-
-## Features (planned)
-
-- Personal best detection (best gross, best differential, most GIR, fewest putts)
-- Milestone achievements (first round, 10th/50th/100th round)
-- Streak tracking (consecutive rounds with FIR, GIR, par-or-better)
-- Achievement gallery screen with earned/unlocked badges
-- Notification on new achievement unlock
+```bash
+cd /path/to/pinsheet/plugins
+git clone git@github.com:BitNinja01/pinsheet-achievements.git achievments
+```
