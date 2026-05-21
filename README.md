@@ -11,7 +11,7 @@
 
 ---
 
-> Track what matters. Compute what's honest. Surface what helps. Own your own data.
+> Track what matters. Compute what's honest. Surface what helps. Own your data.
 
 ---
 
