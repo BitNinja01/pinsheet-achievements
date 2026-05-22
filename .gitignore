@@ -13,7 +13,7 @@ docs/RUNBOOK.md
 docs/superpowers/
 
 # User data (generated at runtime)
-data/plugins/achievments/
+data/plugins/achievements/
 
 # ---> Python (standard)
 __pycache__/

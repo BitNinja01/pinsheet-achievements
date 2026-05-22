@@ -1,4 +1,4 @@
-"""AchievmentsPlugin — PinSheet plugin adapter for achievement/badge tracking."""
+"""AchievementsPlugin — PinSheet plugin adapter for achievement/badge tracking."""
 from __future__ import annotations
 
 import logging
@@ -15,13 +15,13 @@ if _plugins_parent not in sys.path:
 
 from plugin import PinSheetPlugin
 
-_log = logging.getLogger("achievments")
+_log = logging.getLogger("achievements")
 
 
-class AchievmentsPlugin(PinSheetPlugin):
+class AchievementsPlugin(PinSheetPlugin):
     """Tracks and surfaces achievements and personal milestones from round data."""
 
-    name = "achievments"
+    name = "achievements"
     version = "0.2.0"
 
     def screens(self) -> list[type["Screen"]]:
@@ -34,14 +34,14 @@ class AchievmentsPlugin(PinSheetPlugin):
 
     def settings_schema(self) -> dict:
         return {
-            "achievments.enabled": True,
-            "achievments.notify_on_new": True,
+            "achievements.enabled": True,
+            "achievements.notify_on_new": True,
         }
 
     def on_round_saved(self, round_data: dict) -> None:
-        _log.info("achievments: round saved, checking achievements")
+        _log.info("achievements: round saved, checking achievements")
 
     def acknowledgment_screen(self, round_data: dict, has_details: bool) -> "Screen | None":
         from .ack_screen import RoundAcknowledgmentScreen
-        _log.info("achievments: providing acknowledgment screen")
+        _log.info("achievements: providing acknowledgment screen")
         return RoundAcknowledgmentScreen(round_data, has_details)

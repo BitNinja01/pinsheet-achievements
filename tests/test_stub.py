@@ -1,33 +1,33 @@
-"""Stub tests for the achievments plugin."""
+"""Stub tests for the achievements plugin."""
 from __future__ import annotations
 
 
 def test_plugin_imports() -> None:
-    from achievments.plugin import AchievmentsPlugin
-    assert AchievmentsPlugin.name == "achievments"
-    assert AchievmentsPlugin.version == "0.2.0"
+    from achievements.plugin import AchievementsPlugin
+    assert AchievementsPlugin.name == "achievements"
+    assert AchievementsPlugin.version == "0.2.0"
 
 
 def test_plugin_instantiation() -> None:
-    from achievments.plugin import AchievmentsPlugin
-    plugin = AchievmentsPlugin()
+    from achievements.plugin import AchievementsPlugin
+    plugin = AchievementsPlugin()
     assert plugin is not None
-    assert plugin.name == "achievments"
+    assert plugin.name == "achievements"
 
 
 def test_settings_schema() -> None:
-    from achievments.plugin import AchievmentsPlugin
-    plugin = AchievmentsPlugin()
+    from achievements.plugin import AchievementsPlugin
+    plugin = AchievementsPlugin()
     schema = plugin.settings_schema()
-    assert "achievments.enabled" in schema
-    assert "achievments.notify_on_new" in schema
-    assert schema["achievments.enabled"] is True
+    assert "achievements.enabled" in schema
+    assert "achievements.notify_on_new" in schema
+    assert schema["achievements.enabled"] is True
 
 
 def test_acknowledgment_screen_returns_screen() -> None:
     """acknowledgment_screen() returns a Screen instance for valid data."""
-    from achievments.plugin import AchievmentsPlugin
-    plugin = AchievmentsPlugin()
+    from achievements.plugin import AchievementsPlugin
+    plugin = AchievementsPlugin()
     result = plugin.acknowledgment_screen({"differential": "12.5", "date": "2026-01-01", "index": 1}, has_details=False)
     from textual.screen import Screen
     assert isinstance(result, Screen)
@@ -35,8 +35,8 @@ def test_acknowledgment_screen_returns_screen() -> None:
 
 def test_acknowledgment_screen_with_details() -> None:
     """acknowledgment_screen() returns a Screen with details flag."""
-    from achievments.plugin import AchievmentsPlugin
-    plugin = AchievmentsPlugin()
+    from achievements.plugin import AchievementsPlugin
+    plugin = AchievementsPlugin()
     round_data = {
         "differential": "12.5",
         "date": "2026-01-01",

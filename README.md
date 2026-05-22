@@ -1,12 +1,12 @@
-[![Release](https://img.shields.io/github/v/release/BitNinja01/pinsheet-achievments.svg?style=for-the-badge&color=green)](https://github.com/BitNinja01/pinsheet-achievments/releases)
-[![Downloads](https://img.shields.io/github/downloads/BitNinja01/pinsheet-achievments/total.svg?style=for-the-badge&color=green)](https://github.com/BitNinja01/pinsheet-achievments/releases)
-[![CI](https://img.shields.io/github/actions/workflow/status/BitNinja01/pinsheet-achievments/ci.yml?branch=dev&style=for-the-badge&label=CI)](https://github.com/BitNinja01/pinsheet-achievments/actions)
-[![Platform](https://img.shields.io/badge/Platforms-Linux%20|%20macOS%20|%20Windows-white.svg?style=for-the-badge&color=green)](https://github.com/BitNinja01/pinsheet-achievments)
+[![Release](https://img.shields.io/github/v/release/BitNinja01/pinsheet-achievements.svg?style=for-the-badge&color=green)](https://github.com/BitNinja01/pinsheet-achievements/releases)
+[![Downloads](https://img.shields.io/github/downloads/BitNinja01/pinsheet-achievements/total.svg?style=for-the-badge&color=green)](https://github.com/BitNinja01/pinsheet-achievements/releases)
+[![CI](https://img.shields.io/github/actions/workflow/status/BitNinja01/pinsheet-achievements/ci.yml?branch=dev&style=for-the-badge&label=CI)](https://github.com/BitNinja01/pinsheet-achievements/actions)
+[![Platform](https://img.shields.io/badge/Platforms-Linux%20|%20macOS%20|%20Windows-white.svg?style=for-the-badge&color=green)](https://github.com/BitNinja01/pinsheet-achievements)
 [![Python](https://img.shields.io/badge/python-3.11+-blue.svg?style=for-the-badge&color=green)](https://www.python.org/downloads/)
 
 <p align="center">
-  <img src="docs/img/logo_light.svg#gh-light-mode-only" alt="Achievments Logo" width="500">
-  <img src="docs/img/logo_dark.svg#gh-dark-mode-only" alt="Achievments Logo" width="500">
+  <img src="docs/img/logo_light.svg#gh-light-mode-only" alt="Achievements Logo" width="500">
+  <img src="docs/img/logo_dark.svg#gh-dark-mode-only" alt="Achievements Logo" width="500">
 </p>
 
 ---
@@ -40,14 +40,14 @@ Requires PinSheet v2.1.0+.
 
 ### Option 1: Release zip (recommended)
 
-Download the latest release from the [releases page](https://github.com/BitNinja01/pinsheet-achievments/releases) and extract it into PinSheet's `plugins/` directory:
+Download the latest release from the [releases page](https://github.com/BitNinja01/pinsheet-achievements/releases) and extract it into PinSheet's `plugins/` directory:
 
 ```bash
 # From your PinSheet install directory
 mkdir -p plugins
 cd plugins
-wget https://github.com/BitNinja01/pinsheet-achievments/releases/latest/download/achievments_X.Y.Z.zip
-unzip achievments_X.Y.Z.zip -d achievments
+wget https://github.com/BitNinja01/pinsheet-achievements/releases/latest/download/achievements_X.Y.Z.zip
+unzip achievements_X.Y.Z.zip -d achievements
 ```
 
 ### Option 2: Git clone
@@ -56,11 +56,11 @@ unzip achievments_X.Y.Z.zip -d achievments
 # From your PinSheet install directory
 mkdir -p plugins
 cd plugins
-git clone https://github.com/BitNinja01/pinsheet-achievments.git achievments
+git clone https://github.com/BitNinja01/pinsheet-achievements.git achievements
 ```
 
-For standalone use outside PinSheet, run `pip install -r requirements.txt` from the achievments directory.
+For standalone use outside PinSheet, run `pip install -r requirements.txt` from the achievements directory.
 
 ### Verify installation
 
-Launch PinSheet — if installed correctly, you'll see Achievments listed under plugin bindings. Press `b` on the dashboard to open the achievement gallery.
+Launch PinSheet — if installed correctly, you'll see Achievements listed under plugin bindings. Press `b` on the dashboard to open the achievement gallery.

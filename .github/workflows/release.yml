@@ -41,7 +41,7 @@ jobs:
 
           SHARED="*.py requirements.txt README.md LICENSE docs tests"
 
-          OUT="dist/achievments_${VERSION}.zip"
+          OUT="dist/achievements_${VERSION}.zip"
           zip -r "$OUT" $SHARED \
             -x "*/__pycache__/*" \
             -x "*.pyc"
@@ -53,7 +53,7 @@ jobs:
         id: notes
         run: |
           VERSION="${{ steps.version.outputs.version }}"
-          NOTES_FILE="dist/achievments_${VERSION}.txt"
+          NOTES_FILE="dist/achievements_${VERSION}.txt"
 
           if [ -f "$NOTES_FILE" ]; then
             echo "notes_exist=true" >> $GITHUB_OUTPUT
@@ -74,6 +74,6 @@ jobs:
           draft: false
           prerelease: false
           files: |
-            dist/achievments_${{ steps.version.outputs.version }}.zip
+            dist/achievements_${{ steps.version.outputs.version }}.zip
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

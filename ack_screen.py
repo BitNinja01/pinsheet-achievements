@@ -15,7 +15,7 @@ from stats_scoring import calc_personal_bests
 from screens.animations import SpinReveal
 from screens.season_patterns import PATTERNS, PatternWidget
 
-_log = logging.getLogger("achievments")
+_log = logging.getLogger("achievements")
 
 
 def _figlet(value: str) -> str:
