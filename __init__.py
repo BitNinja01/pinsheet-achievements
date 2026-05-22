@@ -1,3 +1,3 @@
-from achievments.plugin import AchievmentsPlugin
+from achievements.plugin import AchievementsPlugin
 
-__all__ = ["AchievmentsPlugin"]
+__all__ = ["AchievementsPlugin"]

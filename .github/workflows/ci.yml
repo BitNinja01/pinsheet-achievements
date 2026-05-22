@@ -21,10 +21,10 @@ jobs:
           repository: BitNinja01/pinsheet
           path: pinsheet
 
-      - name: Checkout achievments (plugin)
+      - name: Checkout achievements (plugin)
         uses: actions/checkout@v4
         with:
-          path: pinsheet/plugins/achievments
+          path: pinsheet/plugins/achievements
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -39,18 +39,18 @@ jobs:
 
       - name: Compile all Python files
         run: |
-          find pinsheet/plugins/achievments -name "*.py" -not -path "*/tests/*" -exec python -m py_compile {} +
-          find pinsheet/plugins/achievments/tests -name "*.py" -exec python -m py_compile {} +
+          find pinsheet/plugins/achievements -name "*.py" -not -path "*/tests/*" -exec python -m py_compile {} +
+          find pinsheet/plugins/achievements/tests -name "*.py" -exec python -m py_compile {} +
           echo "*** All Python files compiled successfully"
 
       - name: Run tests
         run: |
           cd pinsheet
-          PYTHONPATH=source:plugins pytest plugins/achievments/tests/ -v
+          PYTHONPATH=source:plugins pytest plugins/achievements/tests/ -v
 
       - name: Check for secrets in tracked files
         run: |
-          cd pinsheet/plugins/achievments
+          cd pinsheet/plugins/achievements
           if git ls-files | grep -E '(\.env|credentials\.json|.*secret.*|.*password.*)'; then
             echo "*** Sensitive files detected in tracked files"
             exit 1

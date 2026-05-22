@@ -2,7 +2,7 @@
 
 This file provides guidance to OpenCode when working with code in this repository.
 
-## What Achievments Is
+## What Achievements Is
 
 A PinSheet plugin that tracks and surfaces achievements, badges, and personal milestones from round data. Runs as a hook on `on_round_saved` to detect accomplishments (first birdie, best round, 100th round, streaks, etc.) and displays them in a dedicated screen.
 
@@ -15,7 +15,7 @@ A PinSheet plugin that tracks and surfaces achievements, badges, and personal mi
 This project may contain Claude Code artifacts (`CLAUDE.md`, `.claude/`). These are managed by a different tool. OpenCode must never read, write, or modify them.
 
 ### Nested repo isolation
-**CRITICAL:** Achievments is a standalone git repository nested inside the parent PinSheet repo at `plugins/achievments/`. The parent's `.gitignore` excludes `plugins/`. NEVER commit achievments files from the parent repo.
+**CRITICAL:** Achievements is a standalone git repository nested inside the parent PinSheet repo at `plugins/achievements/`. The parent's `.gitignore` excludes `plugins/`. NEVER commit achievements files from the parent repo.
 
 ## Git workflow
 
@@ -31,10 +31,10 @@ Uses **main + feature branch** workflow:
 
 **Run tests:**
 ```bash
-PYTHONPATH=source:plugins pytest plugins/achievments/tests/ -v
+PYTHONPATH=source:plugins pytest plugins/achievements/tests/ -v
 ```
 
 **Compile a single file:**
 ```bash
-python -m py_compile plugins/achievments/plugin.py
+python -m py_compile plugins/achievements/plugin.py
 ```
