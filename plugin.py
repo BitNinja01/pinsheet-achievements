@@ -22,7 +22,7 @@ class AchievmentsPlugin(PinSheetPlugin):
     """Tracks and surfaces achievements and personal milestones from round data."""
 
     name = "achievments"
-    version = "0.1.0"
+    version = "0.2.0"
 
     def screens(self) -> list[type["Screen"]]:
         return []
@@ -40,3 +40,8 @@ class AchievmentsPlugin(PinSheetPlugin):
 
     def on_round_saved(self, round_data: dict) -> None:
         _log.info("achievments: round saved, checking achievements")
+
+    def acknowledgment_screen(self, round_data: dict, has_details: bool) -> "Screen | None":
+        from .ack_screen import RoundAcknowledgmentScreen
+        _log.info("achievments: providing acknowledgment screen")
+        return RoundAcknowledgmentScreen(round_data, has_details)
