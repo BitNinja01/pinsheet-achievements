@@ -29,7 +29,7 @@ class AchievementsPlugin(PinSheetPlugin):
 
     def bindings(self) -> list[tuple[str, str, str, str]]:
         return [
-            ("DashboardScreen", "b", "push_screen('AchievementsScreen')", "Achievements"),
+            ("DashboardScreen", "b", "app.push_screen('AchievementsScreen')", "Achievements"),
         ]
 
     def settings_schema(self) -> dict:
