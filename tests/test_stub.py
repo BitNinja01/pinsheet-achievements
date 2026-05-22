@@ -5,7 +5,7 @@ from __future__ import annotations
 def test_plugin_imports() -> None:
     from achievments.plugin import AchievmentsPlugin
     assert AchievmentsPlugin.name == "achievments"
-    assert AchievmentsPlugin.version == "0.1.0"
+    assert AchievmentsPlugin.version == "0.2.0"
 
 
 def test_plugin_instantiation() -> None:

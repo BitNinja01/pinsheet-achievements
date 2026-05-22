@@ -22,7 +22,7 @@ class AchievmentsPlugin(PinSheetPlugin):
     """Tracks and surfaces achievements and personal milestones from round data."""
 
     name = "achievments"
-    version = "0.1.0"
+    version = "0.2.0"
 
     def screens(self) -> list[type["Screen"]]:
         return []
